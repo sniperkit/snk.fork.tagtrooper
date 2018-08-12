@@ -1,12 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
 	"flag"
 	"fmt"
-	//	"time"
 
-	"github.com/jacksgt/tagtrooper/actions/prfromtag"
-	//	"github.com/jacksgt/tagtrooper/provider/github"
+	//	"time"
+	"github.com/sniperkit/snk.fork.tagtrooper/actions/prfromtag"
+	//	"github.com/sniperkit/snk.fork.tagtrooper/provider/github"
 )
 
 func main() {

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package prfromtag
 
 /* creates a github PR for a repository based on a tag */
@@ -7,6 +12,13 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"os"
+	"os/exec"
+	"path/filepath"
+	"regexp"
+	"strings"
+	"time"
+
 	"github.com/google/go-github/github"
 	"golang.org/x/oauth2"
 	"gopkg.in/src-d/go-git.v4"
@@ -14,12 +26,6 @@ import (
 	"gopkg.in/src-d/go-git.v4/plumbing"
 	"gopkg.in/src-d/go-git.v4/plumbing/object"
 	"gopkg.in/src-d/go-git.v4/plumbing/transport/http"
-	"os"
-	"os/exec"
-	"path/filepath"
-	"regexp"
-	"strings"
-	"time"
 )
 
 type Repository struct {

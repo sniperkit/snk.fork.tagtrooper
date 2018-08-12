@@ -1,11 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package github
 
 import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/google/go-github/github"
 	"strings"
+
+	"github.com/google/go-github/github"
 )
 
 type GithubProvider struct {
